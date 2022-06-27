@@ -26,7 +26,7 @@ publishPlugin {
 }
 
 patchPluginXml {
-    version "1.7.3"
+    version "1.7.3.1"
     sinceBuild "201.*"
     untilBuild "221.*"
 }
