@@ -1,24 +1,16 @@
 <idea-plugin>
     <id>il.co.galex.namethatcolor</id>
     <name>Name That Color</name>
-    <version>1.7.3</version>
-    <vendor email="theapache64@gmail.com" url="http://github.com/theapache64/name-that-color-intellij-plugin">theapache64</vendor>
+    <version>1.7.3.2</version>
+    <vendor email="hieupham1993@live.com" url="https://github.com/I3eyonder/name-that-color-intellij-plugin">I3eyonder</vendor>
 
-    <description><![CDATA[
-      Name the color you have in your clipboard directly inside your color resource file in Android Studio.<br>
+    <description>
+        <![CDATA[Name the color you have in your clipboard directly inside your color resource file in Android Studio.<br>
       Copy the color in your clipboard and go to your color resources files (usually colors.xml), then open the auto complete pop-up. You'll see there
-      two suggestions go generate the whole (material) color item, with the name of the (material swatch) color.
-    ]]></description>
+      two suggestions go generate the whole (material) color item, with the name of the (material swatch) color.]]>
+    </description>
 
-    <change-notes><![CDATA[
-    <b>1.7.1</b><br>
-     - Updated plugin to latest IntelliJ version (2020.3)<br>
-     ]]></change-notes>
-    <idea-version since-build="201.6668.113"/>
-
-    <depends optional="true" config-file="withKotlin.xml">org.jetbrains.kotlin</depends>
-    <depends>org.jetbrains.android</depends>
-    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <completion.contributor language="XML"
@@ -30,7 +22,5 @@
         <!--Kotlin Support-->
         <completion.contributor language="kotlin"
                                 implementationClass="il.co.galex.namethatcolor.plugin.completion.ClipboardCompletionKotlinContributor"/>
-
     </extensions>
-
 </idea-plugin>
